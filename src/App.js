@@ -1,13 +1,16 @@
 import React from "react";
+import Footer from "./components/Footer";
+import AddTodo from "./components/AddTodo";
+import VisibleTodoList from "./components/VisibleTodoList";
 
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <h1>IBM TODO TASK APP with React-Redux </h1>
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    <AddTodo />
+    <VisibleTodoList />
+    <Footer />
+  </div>
+);
 
 export default App;
